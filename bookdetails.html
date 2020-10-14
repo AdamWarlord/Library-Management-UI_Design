@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Library Management System</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Library</h1>
+        <a href="/home.html">Home</a>
+        <a href="/browse.html">Browse</a>
+        <div class="dropdown">
+            <a href="#">Genre</a>
+
+            <div class="dropdown-content ml-4">
+                <a href="genre-fiction.html">Fiction</a>
+                <a href="genre-nonfiction.html">Non-Fiction</a>
+                <a href="genre-biographies.html">Biographies</a>
+                <a href="genre-educational.html">Educational</a>
+                <a href="genre-journals.html">Journals</a>
+            </div>
+
+        </div>
+        <a href="/profile.html">Profile</a>
+        <a href="/about.html">About</a>
+        <a href="/login.html">Logout</a>
+    </div>
+
+    <div class="homepagebody">
+
+        <div class="row">
+            <div class="column">
+                <img src="images/fictionpage8.jpg" style="width:500px; height:500px;margin-top:auto">
+            </div>
+            <div class="column info1" style="margin-left: 300px;">
+                <h1><u>DETAILS</u></h1>
+                <h3 style="margin:0;padding0;width:70%;">TITLE: The Murmur of Bees</h3>
+                <h3 style="margin:0;padding0;width:70%;">AUTHOR: Sofia Segovia</h3>
+                <h3 style="margin:0;padding0;width:70%;">YEAR PUBLISHED: 2015</h3>
+                <h3 style="margin:0;padding0;width:70%;">GENRE: Fiction</h3>
+            </div>
+        </div>
+        <div class="info1">
+            <h1><u>ISSUING DETAILS</u></h1>
+            <h3>Available to Issue: &#10004; </h3>
+            <h3>Unavailable (already issued by another member): </h3>
+            <h3>Unavailable (out of stock): </h3>
+            <br>
+        </div>
+        <h2><u>Please Choose One:</u></h2>
+        <label class="container">Issue Now
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">Save for Later (In case this book is unavilable; we will notify you when it is
+            available)
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <a href="#" class="covers" style="width: 15%; font-size: 28px;">Proceed</a>
+
+    </div>
+</body>
+
+</html>

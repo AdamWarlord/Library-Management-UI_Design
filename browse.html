@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Library Management System</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Library</h1>
+        <a href="/home.html">Home</a>
+        <a href="/browse.html">Browse</a>
+        <div class="dropdown">
+            <a href="#">Genre</a>
+
+            <div class="dropdown-content ml-4">
+                <a href="genre-fiction.html">Fiction</a>
+                <a href="genre-nonfiction.html">Non-Fiction</a>
+                <a href="genre-biographies.html">Biographies</a>
+                <a href="genre-educational.html">Educational</a>
+                <a href="genre-journals.html">Journals</a>
+            </div>
+
+        </div>
+        <a href="/profile.html">Profile</a>
+        <a href="/about.html">About</a>
+        <a href="/login.html">Logout</a>
+    </div>
+
+    <div class="homepagebody">
+        <h1>Search for a Book or an Author!</h1>
+        <br>
+        <div class="searchbox">
+            <input type="text" id="searchbar" name="searchbar" onkeyup="search_engine()" placeholder="eg:- Dune">
+            <br>
+            <br>
+            <br>
+
+            <div class="row-browse">
+                <ul id='list'>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#">
+                                <img src="images/auto2.jpg" style="width: 100%; height:100%;">
+                            </a>
+                        </div>
+                        <p id="search-param">Becoming Michelle Obama</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#"><img src="images/auto1.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">Reminder Dennis Waterman</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#"><img src="images/nonfiction2.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">Ikigai</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#"><img src="images/nonfiction3.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">Killer Clown</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#"><img src="images/fiction1.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">The Glass Hotel</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#"><img src="images/fiction3.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">Dune</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="#"><img src="images/nonfiction1.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">Moth</p>
+                    </li>
+                    <li class="search-element">
+                        <div class="card-browse">
+                            <a href="bookdetails.html"><img src="images/fictionpage8.jpg" style="width: 100%; height:100%;">
+                            </a>
+
+                        </div>
+                        <p id="search-param">The Murmer of Bees</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function search_engine() {
+            let input = document.getElementById('searchbar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('search-element');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                } else {
+                    x[i].style.display = "inline-block";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+Module Overview For Online Library System
+
+1. Home page -> Top Books , Displays The Genre Of Books
+	1.5. If Logged in -> Return a Book Pop up.
+2. Login Module
+3. Side-Nav-Bar -> Home, Login, Genre
+4. Pages for each genre
+5. Genre Page
+6. Books List page in a Genre 
+	6.5. Click a book -> Borrow Book/Check Next availability , Reserve Book , "If you have already red the book"
+7. Profile Page 
+	7.5. Shows Books Rented, Books Reserved , Return a Book
+
+8. Browse for a Book
